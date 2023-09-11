@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        *{
+            background: #111111;
+        }
+        .container{
+            width: 1200px;
+            height: 500px;
+            display: flex;
+            background-color: #111111;
+            color: whitesmoke;
+            margin-top: -10px;
+         } 
+        .h span{
+            color: antiquewhite;
+        }
+        .h1{
+            color: rgb(41, 41, 41);
+            font-size: 150px;
+            position: absolute;
+            margin-left: 320px;
+            margin-top: -205px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            opacity: 0.5;
+        }
+        .h{
+            font-size: 500%;
+            font-weight: 900;
+            margin-top: 20px;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bolder;
+            color: #fcb404;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .info{
+            margin-top: 65px;
+            margin-left: 150px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: whitesmoke;
+        }
+           .mydiv{
+            margin-top: 50px;
+            width: 1150px;
+            margin-left: 20px;
+        }
+        .aboutme1{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+        }
+        .aboutme2{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 310px;
+            margin-top: -244px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+        }
+        .aboutme3{
+            width: 200px;
+            height: 120px;
+            margin-left: 620px;
+            margin-top: -207px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 1px solid grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        .aboutme4{
+            width: 200px;
+            height: 120px;
+            margin-left: 850px;
+            margin-top: -123px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 1px solid grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        .aboutme5{
+            width: 200px;
+            height: 120px;
+            margin-left: 620px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 1px solid grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        .aboutme6{
+            width: 200px;
+            height: 120px;
+            margin-left: 850px;
+            margin-top: -125px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 1px solid grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        hr{
+            margin-left: -170px;
+            margin-top: 91px;
+        }
+        button{
+            width: 160px;
+            height: 40px;
+            margin-top: 220px;
+            margin-left: -170px;
+            border-radius: 35px;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+            background-color: #fcb404;
+            border: none;
+            color: snow;
+        }
+        .skill{
+            display: flex;
+            gap: 260px;
+            width: 1150px;
+            height: 200px;
+            margin-left: -25px;
+        }
+        .skills {
+            height: 30px;
+            width: 1150px;
+            gap: 400px;
+            font-weight: bolder;
+            display: flex;
+            font-size: 30px;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            margin-left: -10px;
+        }
+        .progress-bar,
+        .progress-bar2, 
+        .progress-bar3{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 50%;
+            text-align: center;
+            background: radial-gradient(closest-side, white 79%, transparent 80% 100%), 
+            conic-gradient(#fcb404 20%, rgb(22, 22, 22) 0);
+        }
+        .progress-bar2{
+            background: radial-gradient(closest-side, white 79%, transparent 80% 100%), 
+            conic-gradient(#fcb404 25%, rgb(22, 22, 22) 0);
+        }
+        .progress-bar3{
+            background: radial-gradient(closest-side, white 79%, transparent 80% 100%), 
+            conic-gradient(#fcb404 15%, rgb(22, 22, 22) 0);
+        }
+        .inside-circle {
+             width: 160px;
+             height: 160px;
+             border-radius: 50%;
+             background: black;
+             line-height: 150px;
+             text-align: center;
+             color: white;
+             position:absolute;
+             z-index: 100;
+             font-weight: 700;
+             font-size: 4em;
+             margin-left: 20px;
+             margin-top: 20px;
+            }
+        .edu h2{
+            color: #fcb404;
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .edu h1 span{
+            color: antiquewhite;
+        }
+        .edu{
+            text-align: center;
+            width: 1350px;
+            margin-left: -100px;
+        }
+        .exe1{
+            width: 450px;
+            height: 150px;
+            margin-left: 200px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+            text-align: left;
+        }
+        .exe2{
+            width: 450px;
+            height: 150px;
+            margin-left: 700px;
+            margin-top: -173px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+            text-align: left;
+        }
+        .exe3{
+            width: 450px;
+            height: 180px;
+            margin-left: 200px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+            text-align: left;
+        }
+        .exe4{
+            width: 450px;
+            height: 180px;
+            margin-left: 700px;
+            margin-top: -204px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+            text-align: left;
+        }
+        .exe5{
+            width: 450px;
+            height: 180px;
+            margin-left: 200px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+            text-align: left;
+        }
+        .exe6{
+            width: 450px;
+            height: 180px;
+            margin-left: 700px;
+            margin-top: -204px;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: whitesmoke;
+            text-align: left;
+        }
+            .navBar {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            margin-top: 11px;
+            margin-left: -55px;
+        } 
+        .navBar > .navItem {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-right: 20px;
+            /* background-color: grey; */
+        }
+
+        .navBar > .navItem > .title {
+            position: absolute;
+            transform: translateX(-60px);
+            z-index: 3;
+            transition: transform 10s;
+            opacity: 0;
+            background-color: #e0a004;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 30px;
+            width: 85px;
+        }
+
+        .navBar > .navItem > .title > a {
+            text-decoration: none;
+            color: white;
+            background: #e0a004;
+        }
+
+        .navBar > .navItem > .icon {
+            padding: 10px;
+            height: 25px;
+            width: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            border-radius: 50%;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .navBar > .navItem > .title:hover {
+            transform: translateX(-60px);
+            opacity: 1;
+            background: #fcb404;
+        }
+    </style>
+</head>
+<body>
+        <h1 class="h"><span>ABOUT</span>  ME</h1>
+        <h1 class="h1">RESUME</h1>
+       <div class="info">
+           <h2>PERSONAL INFOS</h2>
+       </div>
+    <div class="container">
+      <div class="setting"></div>
+      <div class="mydiv">
+        <div class="aboutme1">
+            First Name : Joseph <br> <br>
+               Last Name : Stephen <br> <br>
+               Age : 36 Years <br> <br>
+               Nationality : Nigerian  <br><br>
+               Freelance : Available
+               <button type="button"> <a href="Contact.html"  style="background: #e0a004;">DOWNLOAD CV</a></button>
+        </div><br><br>
+        <div class="aboutme2">
+               Address : Lagos <br> <br>
+               Phone : +2347064526539 <br> <br>
+               Email : iwelujoseph@gmail.com <br> <br>
+               Languages : English, Yoruba, Sign Language<br><br>
+           </div>
+           <div class="aboutme3">
+               <h1>2+ </h1>
+               YEARS OF <br> EXPERIENCE
+               <hr width="50px">
+           </div>
+           <div class="aboutme4">
+               <h1>10+</h1>
+               PROJECT <br>
+               <hr width="50px">
+           </div>
+           <div class="aboutme5"> <h1>5+</h1>
+               HAPPY <br>CUSTOMERS  <hr width="50px">
+           </div>
+           <div class="aboutme6"><h1>2+</h1>
+               AWARDS  <hr width="50px">
+           </div>
+           <hr width="900px" style="margin-left: 100px; height: 5px; background-color: #e0a004; border: none;">
+           <h1><span style="color: antiquewhite;">MY</span>  SKILLS</h1>
+           <div class="skill"> 
+               <div class="progress-bar">
+                   <div class="inside-circle"> 20% </div>
+              </div>
+               <div class="progress-bar2">
+                   <div class="inside-circle"> 25% </div>
+               </div>
+               <div class="progress-bar3">
+                   <div class="inside-circle"> 15% </div>
+               </div>
+           </div>
+           <div class="skills">  
+               <div>HTML</div>
+               <div>CSS</div>
+               <div style="margin-left: -10px;">JAVASCRIPT</div>
+           </div>
+           <hr width="900px" style="margin-left: 100px; height: 5px; background-color: #e0a004; border: none;">
+            <div class="edu">
+               <h2> <span style="color: antiquewhite;">EXPERIENCES</span> & EDUCATION</h2>
+               <div class="exe1">2023 - Present <br><br>WEB DEVELOPER - JOSUS VARIETY STORE <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis sapiente. Aliquam, autem at voluptates numquam in perferendis exercitationem quo.</div><br>
+               <div class="exe2">2023 <br><br> NHS - DIPLOMA(FRONTEND WEB DEVELOPER) <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis sapiente. Aliquam, autem at voluptates numquam in perferendis exercitationem quo.</div> <br>
+               <div class="exe3"> 2017 - 2023 <br><br> LOGISTICS - JADALU HEALTHCARE LIMITED <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis sapiente. Aliquam, autem at voluptates numquam in perferendis exercitationem quo.</div>  <br>
+               <div class="exe4">2019 <br><br>WEB DEVELOPER- ENVAO <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis sapiente. Aliquam, autem at voluptates numquam in perferendis exercitationem quo.</div>  <br>
+               <div class="exe5">2017 - 2023 <br><br>SOFTWARE ENGINNER - 3C HUB BRAND MANAGEMENT<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis sapiente. Aliquam, autem at voluptates numquam in perferendis exercitationem quo.</div> <br>
+               <div class="exe6">2012 <br><br>FEDERAL MINISTRY OF LABOUR AND PRODUCTIVITY - TRADE TEST -  LEVEL - 3<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis sapiente. Aliquam, autem at voluptates numquam in perferendis exercitationem quo.</div>
+           </div>
+       </div>
+    <div class="navBar">
+        <div class="navItem">
+            <div class="title"><a href="index.html">Home</a></div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" style="background: grey;" viewBox="0 0 512 512"><path fill="white" d="M416 174.74V48h-80v58.45L256 32L0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"/></svg>
+            </div>
+        </div>
+        <div class="navItem">
+            <div class="title"> <a href="About.html">About</a></div>
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="background: grey;"viewBox="0 0 24 24"><path fill="white
+            " d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3a3 3 0 0 1 3 3M3 5v14a2  2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"/></svg></div>
+        </div>
+        <div class="navItem">
+            <div class="title"><a href="Portfolios.html">Portfolio</a></div>
+            <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" style="background: grey;"viewBox="0 0 20 20"><path fill="white" d="M4 5H.78c-.37 0-.74.32-.69.84l1.56 9.99S3.5 8.47 3.86 6.7c.11-.53.61-.7.98-.7H10s-.7-2.08-.77-2.31C9.11 3.25 8.89 3 8.45 3H5.14c-.36 0-.7.23-.8.64C4.25 4.04 4 5 4 5zm4.88 0h-4s.42-1 .87-1h2.13c.48 0 1 1 1 1zM2.67 16.25c-.31.47-.76.75-1.26.75h15.73c.54 0 .92-.31 1.03-.83c.44-2.19 1.68-8.44 1.68-8.44c.07-.5-.3-.73-.62-.73H16V5.53c0-.16-.26-.53-.66-.53h-3.76c-.52 0-.87.58-.87.58L10 7H5.59c-.32 0-.63.19-.69.5c0 0-1.59 6.7-1.72 7.33c-.07.37-.22.99-.51 1.42zM15.38 7H11s.58-1 1.13-1h2.29c.71 0 .96 1 .96 1z"/></svg></div>
+        </div>
+        <div class="navItem">
+            <div class="title"><a href="Contact.html">Contact</a></div>
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="background: grey;"" viewBox="0 0 21 21"><g fill="white" fill-rule="evenodd" stroke="black" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.819V14.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6.819a2 2 0 0 0-1.212-1.838l-5-2.143a2 2 0 0 0-1.576 0l-5 2.143A2 2 0 0 0 3.5 6.819z"/><path d="m5.5 7.5l5 3l5-3"/></svg></div>
+        </div>
+        <div class="navItem">
+            <div class="title"><a href="Blogs.html">Blogs</a></div>
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="background: grey;"" viewBox="0 0 520 512"><path fill="white" d="M463 226q6 20 6 36q0 63-68 107l-17 15q4 64 9 77q-12-6-54-36q-18-20-38-20h-64q-9 9-43 22q53 21 107 21q1 0 19 16t48.5 32t60.5 16q7 0 9-11t0-26.5t-4.5-31.5t-5.5-27l-3-11q89-56 89-143q0-67-43-113q-1 7-.5 20t-1 31.5T463 226zM79 427q30 0 62-21.5t51.5-43T213 341q90 0 152-46t62-118q0-73-62.5-125T213 0Q125 0 62.5 52T0 177q0 86 90 143q-2 7-5.5 18T75 372.5t-5.5 39T79 427zM43 177q0-56 49.5-95T213 43t121 39t50 95t-51 89t-120 33q-22 0-42 25q-35 35-52 45q1-2 11-36l11-32l-28-17q-70-44-70-107z"/></svg></div>
+        </div>
+  </div> 
+    </div>
+ 
+   
+</body>
+</html>

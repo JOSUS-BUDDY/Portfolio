@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        *{
+            margin: 0px;
+            background: #111111;
+            color: antiquewhite;
+        }
+        .h{
+            color: rgb(41, 41, 41);
+            font-size: 150px;
+          /* font-weight: 10; */
+            position: absolute;
+             margin-left: 340px;
+            margin-top: -50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            opacity: 0.5;
+        }
+        h2{
+             color: #e0a004;
+            font-size: 500%;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif;
+            margin-top: 50px;
+            margin-left: 405px;
+            }
+        h1{
+            color: rgb(41, 41, 41);
+            font-size: 150px;
+            margin-left: 300px;
+            margin-top: -45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            opacity: 0.5;
+            position: relative;
+        }
+        .container{
+            width: 1200px;
+            height: 500px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        .setting{
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(107, 197, 23);
+            margin-left: 10px;
+            margin-top: 200px;
+        }
+        .pis{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-evenly;
+            }
+        .pix{
+             flex: 33.33%;
+             padding: 10px;
+             margin-left: 120px;
+            }
+        .pic{
+             display: flex;
+             margin-top: 20px;
+             justify-content: space-around;
+             margin-left: 130px;
+            }
+         .pix1{
+            flex: 33.33%;
+            padding: 2px;
+             margin-top: 20px;
+        }
+        .pik{
+             margin-top: 20px;
+         }
+        .pix3{
+            padding: 5px;
+            margin-top: 20px;
+            margin-left: 350px;
+            }
+        .navBar {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            margin-top: 100px;
+            margin-left: -70px;
+        }
+        
+        .navBar > .navItem {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .navBar > .navItem > .title {
+            position: absolute;
+            transform: translateX(-60px);
+            z-index: 3;
+            transition: transform 10s;
+            opacity: 0;
+            background-color: #e0a004;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 30px;
+            width: 85px;
+        }
+        .navBar > .navItem > .title > a {
+            text-decoration: none;
+            color: white;
+            background: #e0a004;
+        }
+        .navBar > .navItem > .icon {
+            padding: 10px;
+            height: 25px;
+            width: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            border-radius: 50%;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .navBar > .navItem > .title:hover {
+            transform: translateX(-60px);
+            opacity: 1;
+            background: #fcb404;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1 class="h">MY WORK</h1>
+        <h2><span>MY PORT</span>FOLIO</h2> 
+    </div>
+    <div class="container">
+        <div class="work">
+            <div class="pis">
+                <div class="pix">
+                    <img src="/PORTFOLIO/Portfolio Project/Landing page.png" alt="" width="300px" height="400px">
+                </div>
+                <div class="pix">
+                    <img src="/PORTFOLIO/Portfolio Project/Clone.png" alt="" width="300px" height="400px">
+                </div>
+            </div>
+            <div class="pic">
+                <div class="pix1"> 
+                   <img src="/PORTFOLIO/Portfolio Project/Login.png" alt="" width="300px" height="400px">
+                </div>
+                <div class="pix1">
+                  <img src="/PORTFOLIO/Portfolio Project/Premier.png" alt="" width="300px" height="400px" style="margin-left: 70px;">
+                </div>
+            </div>
+            <div class="pik">  <div class="pix3">
+                    <img src="/PORTFOLIO/Portfolio Project/Tonga.png" alt="" width="500px">
+                </div>
+                <div class="pix2">
+                    <img src="/PORTFOLIO/Portfolio Project/Times Table.jpg" alt="" width="1200px">
+                </div>
+              
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="navItem">
+                <div class="title"><a href="index.html">Home</a></div>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" style="background: grey;" viewBox="0 0 512 512"><path fill="white" d="M416 174.74V48h-80v58.45L256 32L0 272h64v208h144V320h96v160h144V272h64l-96-97.26z"/></svg>
+                </div>
+            </div>
+            <div class="navItem">
+                <div class="title"> <a href="About.html">About</a></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="background: grey;"viewBox="0 0 24 24"><path fill="white
+                " d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3a3 3 0 0 1 3 3M3 5v14a2  2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"/></svg></div>
+            </div>
+            <div class="navItem">
+                <div class="title"><a href="Portfolios.html">Portfolio</a></div>
+                <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" style="background: grey;"viewBox="0 0 20 20"><path fill="white" d="M4 5H.78c-.37 0-.74.32-.69.84l1.56 9.99S3.5 8.47 3.86 6.7c.11-.53.61-.7.98-.7H10s-.7-2.08-.77-2.31C9.11 3.25 8.89 3 8.45 3H5.14c-.36 0-.7.23-.8.64C4.25 4.04 4 5 4 5zm4.88 0h-4s.42-1 .87-1h2.13c.48 0 1 1 1 1zM2.67 16.25c-.31.47-.76.75-1.26.75h15.73c.54 0 .92-.31 1.03-.83c.44-2.19 1.68-8.44 1.68-8.44c.07-.5-.3-.73-.62-.73H16V5.53c0-.16-.26-.53-.66-.53h-3.76c-.52 0-.87.58-.87.58L10 7H5.59c-.32 0-.63.19-.69.5c0 0-1.59 6.7-1.72 7.33c-.07.37-.22.99-.51 1.42zM15.38 7H11s.58-1 1.13-1h2.29c.71 0 .96 1 .96 1z"/></svg></div>
+            </div>
+            <div class="navItem">
+                <div class="title"><a href="Contact.html">Contact</a></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="background: grey;"" viewBox="0 0 21 21"><g fill="white" fill-rule="evenodd" stroke="black" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.819V14.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6.819a2 2 0 0 0-1.212-1.838l-5-2.143a2 2 0 0 0-1.576 0l-5 2.143A2 2 0 0 0 3.5 6.819z"/><path d="m5.5 7.5l5 3l5-3"/></svg></div>
+            </div>
+            <div class="navItem">
+                <div class="title"><a href="Blogs.html">Blogs</a></div>
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="background: grey;"" viewBox="0 0 520 512"><path fill="white" d="M463 226q6 20 6 36q0 63-68 107l-17 15q4 64 9 77q-12-6-54-36q-18-20-38-20h-64q-9 9-43 22q53 21 107 21q1 0 19 16t48.5 32t60.5 16q7 0 9-11t0-26.5t-4.5-31.5t-5.5-27l-3-11q89-56 89-143q0-67-43-113q-1 7-.5 20t-1 31.5T463 226zM79 427q30 0 62-21.5t51.5-43T213 341q90 0 152-46t62-118q0-73-62.5-125T213 0Q125 0 62.5 52T0 177q0 86 90 143q-2 7-5.5 18T75 372.5t-5.5 39T79 427zM43 177q0-56 49.5-95T213 43t121 39t50 95t-51 89t-120 33q-22 0-42 25q-35 35-52 45q1-2 11-36l11-32l-28-17q-70-44-70-107z"/></svg></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
